@@ -15,12 +15,12 @@ model=pickle.load(open('kmeanmodel.pkl','rb'))
 # front end elements of the web page 
 html_temp = """ 
 <div style ="background-color:yellow;padding:13px"> 
-<h1 style ="color:black;text-align:center;">Streamlit Loan Prediction ML App</h1> 
+<h1 style ="color:black;text-align:center;">News Clustering</h1> 
 </div> 
 """ 
 st.markdown(html_temp, unsafe_allow_html = True) 
 default_value_goes_here = ""
-Content = st.text_area("label goes here", default_value_goes_here)
+Content = st.text_area("Input the headline of the stroy here", default_value_goes_here)
 result =""
 df= pd.read_csv('https://raw.githubusercontent.com/Samiratu/DataMining_Visualizations/main/finaldata.csv')
 # data["label"] = label_enc.fit_transform(data[["label"]])  
