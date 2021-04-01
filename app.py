@@ -25,7 +25,7 @@ result =""
 df= pd.read_csv('https://raw.githubusercontent.com/Samiratu/DataMining_Visualizations/main/finaldata.csv')
 # data["label"] = label_enc.fit_transform(data[["label"]])  
 # when 'Predict' is clicked, make the prediction and store it 
-if st.button("Predict"): 
+if st.button("Predict Category"): 
   pred = model.predict(tfid.transform([Content]))
   if pred==1:
     st.write('sports')   
