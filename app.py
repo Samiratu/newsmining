@@ -14,7 +14,7 @@ model=pickle.load(open('kmeanmodel.pkl','rb'))
       
 # front end elements of the web page 
 html_temp = """ 
-<div style ="background-color:yellow;padding:13px"> 
+<div style ="background-color:purple;padding:13px"> 
 <h1 style ="color:black;text-align:center;">News Clustering</h1> 
 </div> 
 """ 
